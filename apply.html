@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Job</title>
+    <style>
+        .topnav{
+            background-color: #4472C4;
+            padding-left: 10px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        .topnav a{
+            color: white;
+            text-align: center;
+            width: 33.3%;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 80px;
+            
+        }
+
+        .foot{
+            background-color: black;
+            text-align: center;
+            color: white;
+        
+        }
+
+        .frm{
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 align="center">Job.com</h1>
+    </header>
+
+    <nav class="topnav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="apply.html" target="_blank">Apply</a>
+    </nav>
+
+    <section>
+        <form class="frm">
+            <fieldset>
+                <legend>Fill this form to apply now</legend>
+                Name: <input type="text" name="name" placeholder="Your name" required>
+                <br><br>
+                Job Reference Number: <input type="text" name="job_reference_number" placeholder="Your job reference number" required minlength="5" maxlength="5"> <br><br>
+                Email: <input type="email" name="email" placeholder="yourname@example.com" required><br><br>
+                Phone: <input type="tel" name="phone" placeholder="1234567890" required pattern="[0-9]{10}"> <br><br>
+                Gender: <input type="radio" name="gender" id="male" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label><br> <br>
+                Skillsets: <input type="checkbox" name="skill1" id="skill1" value="html"> <label for="skill1">HTML</label>
+                <input type="checkbox" name="skill2" id="skill2" value="css"> <label for="skill2">CSS</label>
+                <input type="checkbox" name="skill3" id="skill3" value="Javascript"> <label for="skill3">Javascript</label>
+                <input type="checkbox" name="skill4" id="skill4" value="Bootstrap"> <label for="skill4">Bootstrap</label>
+                <input type="checkbox" name="skill5" id="skill5" value="Java"> <label for="skill5">Java</label> <br><br>
+                Address: <br><textarea name="address" id="address" cols="92" rows="12"></textarea> <br><br>
+                Resume: <input type="file" name="myfile" id="myfile" value="myfile" required> <br> <br>
+                <input type="button" value="Submit">
+
+            </fieldset>
+        </form>
+    </section>
+    
+    <footer class="foot">
+        <p>&#169; 2022 - Job.com</p>
+    </footer>
+</body>
+</html>

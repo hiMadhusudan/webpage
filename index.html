@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job.com</title>
+    <style>
+      .topnav {
+        background-color: #4472c4;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+      }
+
+      .topnav a {
+        color: white;
+        text-align: center;
+        width: 33.3%;
+        text-decoration: none;
+        font-size: 20px;
+        padding: 80px;
+      }
+
+      .foot {
+        background-color: black;
+        text-align: center;
+        color: white;
+        margin-top: 30%;
+      }
+
+      #knowMore {
+        background-color: white;
+        border-color: greenyellow;
+        border-radius: 4px;
+        font-size: x-small;
+        padding: 4px 8px 4px 8px;
+        margin-left: 40px;
+        margin-top: 5px;
+        margin-bottom: 15px;
+      }
+
+      aside {
+        width: 30%;
+        float: inline-end;
+      }
+
+      #ele {
+        background-color: #cbcbcb;
+        color: black;
+      }
+
+      #el {
+        background-color: #f1f1f1;
+        color: black;
+      }
+
+      #heading {
+        background-color: black;
+        color: white;
+        text-align: left;
+      }
+
+      #more {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1 align="center">Job.com</h1>
+    </header>
+
+    <nav class="topnav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="apply.html" target="_blank">Apply</a>
+    </nav>
+
+    <section style="display: flex">
+      <div style="width: 60%">
+        <h3>Life at Job.com</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
+          voluptatibus quibusdam eius officia perfer. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta, enim! Quidem provident incidunt temporibus harum, ab nulla ea praesentium optio fugiat laborum perferendis facere recusandae explicabo minus non amet iure, ducimus dolorum soluta voluptatibus cum rerum.<span id="dots">...</span
+          ><span id="more"
+            ><br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            ipsum voluptate dicta corporis dignissimos ratione dolores odio enim
+            minima, harum repudiandae, aut eos earum, sed eveniet blanditiis ex
+            vitae! Eligendi. Molestias est atque provident asperiores iste. Quam
+            necessitatibus repellendus dolorem ad est. Odio officia vel itaque
+            aliquid sunt sint reprehenderit magni. Saepe, laborum molestias
+            aspernatur illum exercitationem nulla voluptates modi. Dolores quis
+            minima ipsam explicabo voluptas aut ullam dolorem atque! Ipsum eaque
+            cupiditate odio aperiam maiores minus saepe enim dolores ducimus
+            commodi. Nulla temporibus tenetur autem quae natus quo
+            aperiam!</span
+          >
+        </p>
+        <button onclick="myFunction()" id="knowMore">Know More</button>
+
+        <h3>Job Listing</h3>
+        <table style="width: 100%">
+          <tr id="heading">
+            <th>S.No</th>
+            <th>Job Title</th>
+            <th>Description</th>
+            <th>Action</th>
+          </tr>
+          <tr id="ele">
+            <td>01.</td>
+            <td>Frontend Developer</td>
+            <td>
+              <a
+                href="jobDescription.html#jobdes1"
+                style="text-decoration: none"
+                >Click here to view description</a
+              >
+            </td>
+            <td>
+              <a href="apply.html" style="text-decoration: none">Apply</a>
+            </td>
+          </tr>
+          <tr id="el">
+            <td>02.</td>
+            <td>Backend Developer</td>
+            <td>
+              <a
+                href="jobDescription.html#jobdes2"
+                style="text-decoration: none"
+                >Click here to view description</a
+              >
+            </td>
+            <td>
+              <a href="apply.html" style="text-decoration: none">Apply</a>
+            </td>
+          </tr>
+          <tr id="ele">
+            <td>03.</td>
+            <td>Fullstack Developer</td>
+            <td>
+              <a
+                href="jobDescription.html#jobdes3"
+                style="text-decoration: none"
+                >Click here to view description</a
+              >
+            </td>
+            <td>
+              <a href="apply.html" style="text-decoration: none">Apply</a>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <aside style="width: 40%; float: right; margin: 20px 5px 5px 10px">
+        <img
+          src="https://cdn.pixabay.com/photo/2016/08/05/11/05/business-people-1572059_960_720.jpg"
+          width="300px"
+          height="200px"
+          alt="People doing their work in office"
+          usemap="#image_map"
+        />
+
+        <map name="image_map">
+          <area
+            alt="image source"
+            title="click to view image source"
+            href="https://pixabay.com/photos/business-man-company-office-1572059/"
+            coords="0 ,0,150,200"
+            target="_blank"
+            shape="rect"
+          />
+          <area
+            alt="image enlarge"
+            title="click to enlarge image"
+            href="https://cdn.pixabay.com/photo/2016/08/05/11/05/business-people-1572059_960_720.jpg"
+            target="_blank"
+            coords="151,0,300,200"
+            shape="rect"
+          />
+        </map>
+      </aside>
+    </section>
+
+    <footer class="foot">
+      <p>&#169; 2022 - Job.com</p>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("knowMore");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Know more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Know less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </body>
+</html>
